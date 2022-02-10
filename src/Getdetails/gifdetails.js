@@ -45,7 +45,7 @@ function GifDetails() {
                     ? (
                         <div>
                             <img src={gif.images.original.url} alt="gif" /> 
-                            <span>{gif.title}</span>
+                            <span>Title: {gif.title}</span>
                         </div>
                     )                    
                     : "Loading..."
