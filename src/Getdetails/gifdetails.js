@@ -48,7 +48,7 @@ function GifDetails() {
                             <span>{gif.title}</span>
                         </div>
                     )                    
-                    : "Loading"
+                    : "Loading..."
                 }
                 
             </div>
