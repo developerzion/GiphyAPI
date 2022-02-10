@@ -60,7 +60,7 @@ function App() {
                       gifs.data.data.length  ?  gifs.data.data.map((gif, key) => {
                                                   return (
                                                     <div className="gifs" key={key} >
-                                                      <img src={gif.images.original.url} alt="logo" />
+                                                      <img src={gif.images.original.url} alt="gif" />
                                                     </div>
                                                   )
                                                 })
