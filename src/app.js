@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 //Import Styles
@@ -8,7 +9,6 @@ import logo from './images/logo.webp'
 
 
 function App() {
-
  
   const [gifs, setGifs] = useState([])
   const [loader, setLoader] = useState(false)
@@ -44,7 +44,7 @@ function App() {
     <>
       <div className="container">
 
-        <img className="logo" src={logo} alt="logo" />
+        <Link to="/"><img className="logo" src={logo} alt="logo" /></Link>
         <p>Implement a simple .gif search app based on the Giphy API</p>
 
         <div className="searchForm">
@@ -59,8 +59,9 @@ function App() {
             loader  ? 
                       gifs.data.data.length  ?  gifs.data.data.map((gif, key) => {
                                                   return (
+                                                    
                                                     <div className="gifs" key={key} >
-                                                      <img src={gif.images.original.url} alt="gif" />
+                                                      <Link to={`/gifdetails/${search.searchval}/${gif.id}`}><img src={gif.images.original.url} alt="gif" /></Link>
                                                     </div>
                                                   )
                                                 })

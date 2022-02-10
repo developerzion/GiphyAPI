@@ -60,8 +60,9 @@ body{
     height: 9rem;
 }
 
-.result{
-    width: 100%;
+.sresult{
+    margin: 0 auto;
+    width: 20rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     height: 3rem;
     text-align: center;
@@ -70,8 +71,12 @@ body{
     font-weight: 600;
     color: rgb(104, 97, 97);
 }
-.noresult{
+.sresult img{
     width: 100%;
+}
+.noresult{
+    margin: 0 auto;
+    width: 50%;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     height: 3rem;
     text-align: center;
